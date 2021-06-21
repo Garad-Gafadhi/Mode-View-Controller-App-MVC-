@@ -1,0 +1,17 @@
+﻿@model IEnumerable<DownloadDTO>
+<hr class="no-margin">
+<div class="card-body no-bottom-padding">
+    <h5>Downloads</h5>
+</div>
+
+<ul id="download-list">
+    @foreach (var download in Model)
+    {
+        <li>
+            <a href="@download.DownloadUrl" target="_blank">
+                <i class="material-icons">save_alt</i>
+                <span>&nbsp;@download.DownloadTitle</span>
+            </a>
+        </li>
+    }
+</ul>

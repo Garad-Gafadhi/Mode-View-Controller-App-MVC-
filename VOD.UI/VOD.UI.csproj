@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+		<UserSecretsId>aspnet-VOD.UI-83FFE252-54C2-425E-8586-8B19C7C047EC</UserSecretsId>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.0" />
+
+		<PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.1.10" />
+		<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.11" />
+		<PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.11" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.11" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.11">
+		  <PrivateAssets>all</PrivateAssets>
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="3.1.10" />
+		<PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\VOD.Common\VOD.Common.csproj" />
+		<ProjectReference Include="..\VOD.Database\VOD.Database.csproj" />
+	</ItemGroup>
+</Project>
